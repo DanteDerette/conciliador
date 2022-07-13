@@ -117,4 +117,5 @@ function geral(minhaContagem) {
   }
 }
 let tentativa = 1;
+
 geral(tentativa);
