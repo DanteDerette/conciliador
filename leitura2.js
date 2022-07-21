@@ -1,6 +1,12 @@
-// let minhaContagem = 3;
+document.querySelector(
+  '#conteudo_38048_102_1 > div > section > div.conteudo_tela_tab.conteudo_show_on_top.height_auto.border_default_bottom.border_default_left.border_default_right > article:nth-child(2) > div > section > div.conteudo_tela_tab.conteudo_show_on_top.height_auto.border_default_bottom.border_default_left.border_default_right > article:nth-child(1) > div > div.height_auto.separador_caixa > div:nth-child(1) > div > div.height_auto > span > article > div.form_consulta.auto_adaptable > aside.div_area_filtros_consulta > div > div:nth-child(2)'
+).innerHTML =
+  document.querySelector(
+    '#conteudo_38048_102_1 > div > section > div.conteudo_tela_tab.conteudo_show_on_top.height_auto.border_default_bottom.border_default_left.border_default_right > article:nth-child(2) > div > section > div.conteudo_tela_tab.conteudo_show_on_top.height_auto.border_default_bottom.border_default_left.border_default_right > article:nth-child(1) > div > div.height_auto.separador_caixa > div:nth-child(1) > div > div.height_auto > span > article > div.form_consulta.auto_adaptable > aside.div_area_filtros_consulta > div > div:nth-child(2)'
+  ).innerHTML + `<button onclick="geral(1);">Dante</button>`;
 
 function geral(minhaContagem) {
+  let tentativa = minhaContagem;
   let esquerda = document.querySelector(
     '#conteudo_38048_102_1 > div > section > div.conteudo_tela_tab.conteudo_show_on_top.height_auto.border_default_bottom.border_default_left.border_default_right > article:nth-child(2) > div > section > div.conteudo_tela_tab.conteudo_show_on_top.height_auto.border_default_bottom.border_default_left.border_default_right > article:nth-child(1) > div > div.height_auto.separador_caixa > div:nth-child(1) > div > div.height_auto > span > article > div.form_consulta.auto_adaptable > div > table > tbody'
   );
@@ -110,12 +116,9 @@ function geral(minhaContagem) {
     }
     botaoConciliar.click();
   } catch (e) {
-    if (tentativa < 5) {
+    if (tentativa < 10) {
       tentativa = tentativa + 1;
       geral(tentativa);
     }
   }
 }
-let tentativa = 1;
-
-geral(tentativa);
