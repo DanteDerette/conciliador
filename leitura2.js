@@ -122,3 +122,8 @@ function geral(minhaContagem) {
     }
   }
 }
+<<<<<<< HEAD
+=======
+let tentativa = 1;
+geral(tentativa);
+>>>>>>> parent of 310e873 (a)
