@@ -107,7 +107,7 @@ function geral(minhaContagem) {
     }
     botaoConciliar.click();
   } catch (e) {
-    if (tentativa < 10) {
+    if (tentativa < 20) {
       tentativa = tentativa + 1;
       geral(tentativa);
     }
